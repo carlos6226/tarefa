@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>☣TOP 3 CAPIVARAS INFADONHAS☣</title>
+
+</head>
+<body>
+    
+
+<h1>TOP-1 DILMA</h1>
+
+<p><img src="dil.jpeg" alt="dil"></p>
+
+<h2>TOP-2 BORBOLETA</h2>
+
+<p><img src="bor.jpeg" alt="bor"></p>
+
+<h3>TOP-3 CLT</h3>
+
+<p><img src="clt.jpg" alt="clt"></p>
+
+<button onclick="changeFontSize('aumentar')">Aumentar</button>
+<button onclick="changeFontSize('reduzir')">Reduzir</button><script>
+function changeFontSize(action){
+const elements = ['h1', 'p'];
+elements.map(element=>{
+
+const selector = document.querySelector(element);
+let value = getComputedStyle(selector).getPropertyValue('font-size');
+value = value.replace('px', '');
+value = action === 'aumentar' ? parseInt(value) + 1 : parseInt(value) - 1;
+selector.style.fontSize = `${value}px`;
+})
+}
+</script>
+
+</body>
+</html>
