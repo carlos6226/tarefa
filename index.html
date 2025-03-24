@@ -8,27 +8,8 @@
 
 </head>
 <body>
-    
-    <nav class=”container d-flex justify-content-between align-items-center” >
-       <img src="dil.jpeg" alt="dil" class=”nav-img “ loading=”lazy”>
-       
-        <ul class=”nav mt-5”>
-        <li class=”nav-item”><a class=”nav-link” href=”#inicio”>Início</a></li>
-        <li class=”nav-item”><a class=”nav-link” href=”#galeria”>Galeria</a></li>
-        <li class=”nav-item”><a class=”nav-link” href=”#contato”>Contato</a></li>
-        </ul>
-        <div id=”acessibilidade” class=”menu-acessibilidade”>
-        
-        <button id=”botao-acessibilidade” class=”btn btn-primary fw-bold rotacao-
-        botao” aria-expanded=”false”>acessibilidade</button>
-        
-        <div id=”opcoes-acessibilidade”>
-        <button id=”aumentar-fonte”>A+</button>
-        <button id=”diminuir-fonte”>A-</button>
-        </div>
-        </div>
-        </nav>
 
+<h4>☣TOP 3 CAPIVARAS INFADONHAS☣</h4>
 
 <h1>TOP-1 DILMA</h1>
 
@@ -42,23 +23,9 @@
 
 <p><img src="clt.jpg" alt="clt"></p>
 
-<button onclick="changeFontSize('aumentar')">Aumentar</button>
-<button onclick="changeFontSize('reduzir')">Reduzir</button><script>
-function changeFontSize(action){
-const elements = ['h1', 'p'];
-elements.map(element=>{
-
-const selector = document.querySelector(element);
-let value = getComputedStyle(selector).getPropertyValue('font-size');
-value = value.replace('px', '');
-value = action === 'aumentar' ? parseInt(value) + 1 : parseInt(value) - 1;
-selector.style.fontSize = `${value}px`;
-})
-}
-</script>
-
-
-
+<div class="botão">
+<div class="indicador"></div>
+</div>
 
 
 
